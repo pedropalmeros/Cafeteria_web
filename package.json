@@ -9,8 +9,14 @@
   "author": "Pedro Fernando Flores Palmeros",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
     "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "sass": "^1.58.0"
-  }
+  },
+  "browserslist":[
+    "last 1 version",
+    "> 1%"
+  ]
 }
