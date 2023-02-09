@@ -1,7 +1,12 @@
 const {src, dest, watch, series, parallel} = require('gulp'); 
+
+// CSS Y SASS
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
+
+// IMAGENES
+const imagemin = require('gulp-imagemin');
 
 
 function css(done){
@@ -23,6 +28,7 @@ function dev(){
 
 function imagenes(done){
     src('./src/img/**/*')
+        .pipe( imagemin({optmizationLevel: 3}))
         .pipe( dest('./build/img') )
     done();
 }
@@ -33,6 +39,10 @@ function imagenes(done){
 //        .pipe( dest('./build/img') )
 //    done();
 //}
+
+
+
+
 exports.css = css;
 exports.dev = dev;
 exports.imagenes = imagenes;
