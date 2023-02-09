@@ -18,8 +18,22 @@ function css(done){
 
 function dev(){
     watch('./src/scss/**/*.scss',css)
+    watch('./src/img/**/*',imagenes);
 }
 
+function imagenes(done){
+    src('./src/img/**/*')
+        .pipe( dest('./build/img') )
+    done();
+}
+
+
+//function imagenes(done){
+//    src('./src/img/**/*')
+//        .pipe( dest('./build/img') )
+//    done();
+//}
 exports.css = css;
 exports.dev = dev;
-exports.default = series( css, dev );
+exports.imagenes = imagenes;
+exports.default = series( imagenes, css, dev);
