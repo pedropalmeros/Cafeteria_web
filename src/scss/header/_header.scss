@@ -1,2 +1,31 @@
-@use '../base' as v;
+@use '../base/variables' as v;
+@use 'base/mixins' as m;
 
+.header{
+    color: v.$blanco;
+    padding: 5rem 0;
+    position: relative;
+
+    @include m.telefono{
+
+    }
+
+    &::before{ 
+        background-color: v.$negro;
+        bottom: 0;
+        content: ''; 
+        left: 0;
+        opacity: 0.6;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .contenido-header{
+        position: relative;
+    }
+}
+
+
+.header-inicio{
+    background-image: url('../img/header_inicio.jpg');
+}

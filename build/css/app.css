@@ -365,3 +365,26 @@ h3 {
 .bg-primario {
   background-color: #E8505B;
 }
+
+.header {
+  color: #FFF;
+  padding: 5rem 0;
+  position: relative;
+}
+.header::before {
+  background-color: #000;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.header .contenido-header {
+  position: relative;
+}
+
+.header-inicio {
+  background-image: url("../img/header_inicio.jpg");
+}
