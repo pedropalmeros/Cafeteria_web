@@ -1,15 +1,1 @@
-@use 'header/header';
-
-
-
-$color : red;
-$color2 : white;
-
-body{
-    background-color: $color;
-    font-size: 4rem;
-}
-
-h1{
-    color: $color2;
-}
+@use "./base"
