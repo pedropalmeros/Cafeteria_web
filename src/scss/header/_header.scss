@@ -2,12 +2,20 @@
 @use 'base/mixins' as m;
 
 .header{
-    color: v.$blanco;
     padding: 5rem 0;
     position: relative;
-
+    
     @include m.telefono{
+        padding: 4rem;
+    }
 
+    @include m.tablet{
+        min-height: 70rem;
+        padding: 3rem;
+    }
+
+    @include m.desktop{
+        padding: 2rem;
     }
 
     &::before{ 
@@ -22,6 +30,17 @@
     }
     .contenido-header{
         position: relative;
+
+        h1{
+            color: v.$blanco;
+            margin-top: 5rem;
+            text-align: center;
+            text-transform: uppercase;
+
+            @include m.tablet { 
+                margin-top: 10rem;
+            }
+        }
     }
 }
 

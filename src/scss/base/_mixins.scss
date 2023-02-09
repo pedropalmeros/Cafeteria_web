@@ -13,7 +13,7 @@
 }
 
 @mixin desktop{
-    @media(min-width: v.$destop){
+    @media(min-width: v.$desktop){
         @content;
     }
 }
