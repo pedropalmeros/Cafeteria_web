@@ -404,6 +404,14 @@ h3 {
   background-color: #5E311E;
 }
 
+.margin-negativo-10 {
+  margin-top: -10rem;
+}
+
+.bg-white {
+  background-color: #FFF;
+}
+
 .header {
   padding: 5rem 0;
   position: relative;
@@ -677,4 +685,26 @@ h3 {
     gap: 3rem;
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+.nuestros-testimoniales {
+  padding: 10rem 3rem;
+}
+@media (min-width: 768px) {
+  .nuestros-testimoniales {
+    padding: 10rem;
+  }
+}
+.nuestros-testimoniales .testimonial {
+  background-color: #ebe7de;
+  border-radius: 2rem;
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 2rem 4rem;
+}
+.nuestros-testimoniales .testimonial .autor {
+  color: #5E311E;
+  font-family: "Bona Nova", serif;
+  font-size: 2.4rem;
+  text-align: right;
 }
