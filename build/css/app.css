@@ -342,6 +342,7 @@ a {
 
 img {
   display: block;
+  height: auto;
   max-width: 100%;
 }
 
@@ -414,6 +415,8 @@ h3 {
 }
 
 .header {
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 5rem 0;
   position: relative;
 }
@@ -460,6 +463,10 @@ h3 {
 
 .header-inicio {
   background-image: url("../img/header_inicio.jpg");
+}
+
+.header-nosotros {
+  background-image: url("../img/header_nosotros.jpg");
 }
 
 .nav-principal {
