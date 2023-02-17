@@ -789,6 +789,38 @@ h3 {
   padding: 1rem;
 }
 
+.proceso-cafe {
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .proceso-cafe {
+    align-items: center;
+    display: flex;
+    gap: 5rem;
+  }
+}
+.proceso-cafe:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.proceso-cafe:last-of-type {
+  margin-bottom: 0;
+}
+.proceso-cafe .imagen,
+.proceso-cafe .texto {
+  flex: 1;
+}
+.proceso-cafe .texto {
+  margin-top: 1rem;
+}
 .proceso-cafe .texto h3 {
+  color: #5E311E;
   margin: 0;
+  text-align: left;
+}
+.proceso-cafe .texto h3::after {
+  background-color: #C39C63;
+  content: "";
+  display: block;
+  height: 5px;
+  width: 50%;
 }

@@ -2,10 +2,46 @@
 @use 'base/mixins' as m; 
 
 .proceso-cafe{
+    margin-bottom: v.$separacion;
+    @include m.tablet{
+        align-items: center;
+        display: flex;
+        gap: v.$separacion;
+    }
+
+    &:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+
+    .imagen,
     .texto{
+        flex:1;
+    }
+
+
+
+
+    .texto{
+        margin-top: 1rem;
+
         h3{
+            color: v.$primario;
             margin: 0;
-            
+            text-align: left;
+
+            &::after{
+                background-color: v.$secundario;
+                content: '';
+                display: block;
+                height: 5px;
+                width: 50%;
+            }
+
+
         }
     }
 }
