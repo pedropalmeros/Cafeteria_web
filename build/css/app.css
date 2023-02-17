@@ -469,6 +469,10 @@ h3 {
   background-image: url("../img/header_nosotros.jpg");
 }
 
+.header-nosotros {
+  background-image: url("../img/header_proceso.jpg");
+}
+
 .nav-principal {
   display: flex;
   flex-direction: column;
@@ -783,4 +787,8 @@ h3 {
   font-size: 2rem;
   margin: 0;
   padding: 1rem;
+}
+
+.proceso-cafe .texto h3 {
+  margin: 0;
 }
